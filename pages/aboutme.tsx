@@ -11,10 +11,10 @@ export default function AboutMe()
             {/* About me information starts here */}
 
             <div className='grid item-center'> 
-                Hello! Thanks for visiting my page! I'm Jonathan Le, and I am curious 
+                Hello! Thanks for visiting my page! My name is Jonathan Le, and I am curious 
                 about both software and hardware. I love learning about new technologies.
 
-                I am currently pursuing a Bachelor's degree in Computer Engineering at the University of Texas 
+                I am currently pursuing a Bachelor&apos;s degree in Computer Engineering at the University of Texas 
                 at Dallas. 
 
                 My interest recently is in web development, NextJS, Vietnamese, and hardware.
