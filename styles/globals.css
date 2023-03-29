@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    background-image: radial-gradient(farthest-side, #454545, black)
+/* Add the background as black spotlight for the name page */
+.radial-gradient {
+    background-image: radial-gradient(#454545, black)
+}
+
+/* This is the background color for the about-me page */
+.mellow-blue {
+    background-color: #4f81be;
 }
