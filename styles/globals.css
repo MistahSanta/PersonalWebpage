@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body {
-    background-color: black;
+    background-image: radial-gradient(farthest-side, #454545, black)
 }
