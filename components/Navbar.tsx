@@ -19,14 +19,14 @@ export const navLink = [
 export default function Navbar() {
   return (
     <nav className=" w-screen flex space-x-10 text-6xl font-sans justify-center  text-white">
-      {navLink.map((link, index) => {
+      {navLink.map((link) => {
         /*link is the variable that will save the info in the array */
         return (
-          <ul>
+        <ul key={link.name}>
             <Link href={link.path}>
-              <li key={index}>{link.name}</li>
+              <li>{link.name}</li>
             </Link>
-          </ul>
+        </ul>
         );
       })}
     </nav>

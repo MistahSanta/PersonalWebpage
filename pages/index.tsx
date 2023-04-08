@@ -1,8 +1,6 @@
 import Head from "next/head";
 import Hey from "@/components/hey";
 import AboutMe from "./aboutme";
-import FireworksAnimation from "@/components/FireworksAnimation";
-
 
 export default function Home() {
   return (
@@ -11,10 +9,7 @@ export default function Home() {
         <title>Jonathan Le Personal Webpage</title>
       </Head>
 
-  
-     
       <Hey />
-     
 
       <AboutMe />
     </>
