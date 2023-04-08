@@ -4,7 +4,7 @@
 
 /* Add the background as black spotlight for the name page */
 .radial-gradient {
-    background-image: radial-gradient(#454545, black)
+    background-image: radial-gradient(#000, #202020)
 }
 
 /* This is the background color for the about-me page */

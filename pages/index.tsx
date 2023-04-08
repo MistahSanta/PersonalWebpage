@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Hey from "@/components/hey";
 import AboutMe from "./aboutme";
+import FireworksAnimation from "@/components/FireworksAnimation";
 
 
 export default function Home() {
@@ -10,7 +11,11 @@ export default function Home() {
         <title>Jonathan Le Personal Webpage</title>
       </Head>
 
+  
+     
       <Hey />
+     
+
       <AboutMe />
     </>
   );
@@ -19,5 +24,6 @@ export default function Home() {
 /*
 Made good progression today. Next goal: 
 - Add a nav bar 
+- Use <img> instead of NextJs because of size formatting
 - Add personal project page 
 */
