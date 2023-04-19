@@ -1,6 +1,8 @@
 import Head from "next/head";
-import Hey from "@/components/hey";
+import Hey from "./hey";
 import AboutMe from "./aboutme";
+import Projects from "./projects";
+
 export default function Home() {
   return (
     <>
@@ -10,6 +12,7 @@ export default function Home() {
 
       <Hey />
       <AboutMe />
+      <Projects />
     </>
   );
 }

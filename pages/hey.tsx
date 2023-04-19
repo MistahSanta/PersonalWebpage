@@ -8,13 +8,13 @@ export default function Hey() {
         className="flex flex-col radial-gradient h-screen w-full border-b-4 border-white"
       >
         <div className="flex flex-col h-full w-full justify-center items-center">
-          <p className=" italic font-serif text-7xl text-blue-500 z-10">
+          <p className=" italic text-7xl text-blue-500 z-10 Roboto font-semibold">
             Hey! I&apos;m {"\n"}
           </p>
-          <p className="z-10 font-bold font-sans text-7xl text-white text-center">
+          <p className="z-10 font-bold font-sans text-9xl text-white text-center">
             Jonathan Le
           </p>
-
+          
           <Fireworks
             style={{
               position: "absolute",
