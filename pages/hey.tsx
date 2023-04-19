@@ -11,7 +11,7 @@ export default function Hey() {
           <p className=" italic text-7xl text-blue-500 z-10 Roboto font-semibold">
             Hey! I&apos;m {"\n"}
           </p>
-          <p className="z-10 font-bold font-sans text-9xl text-white text-center">
+          <p className="z-10 font-bold text-7xl font-sans sm:text-9xl text-white text-center">
             Jonathan Le
           </p>
           
