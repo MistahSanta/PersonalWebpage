@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Hey from "@/components/hey";
 import AboutMe from "./aboutme";
-
 export default function Home() {
   return (
     <>
@@ -10,7 +9,6 @@ export default function Home() {
       </Head>
 
       <Hey />
-
       <AboutMe />
     </>
   );
