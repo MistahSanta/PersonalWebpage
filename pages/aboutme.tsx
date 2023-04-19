@@ -38,7 +38,7 @@ export default function AboutMe() {
         </section>
         {/*This is the picture of me */}
         {/* 1080 × 1616 */}
-          <section className="relative h-[500px] w-[1000px] my-auto max-h-max sm:ml-3 xs:max-h-96 sm:max-h-96 border-white border-4"> 
+          <section className="relative h-[50vh]  w-[40vw] sm:[50vw] my-auto mx-auto sm:max-h-max sm:ml-3 border-white border-4"> 
             <Image
                 src={profilePic}
                 alt="Picture of me"
