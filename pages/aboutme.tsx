@@ -17,7 +17,7 @@ export default function AboutMe() {
           <div className="text-white grid item-center sm:text-sm md:text-base xl:text-xl 2xl:text-2xl font-mono relative openSans text-center sm:text-left">
             <p>
               <br></br>
-              Hi! I'm Jonathan Le! I characterize myself as a lifelong learner
+              Hi! I&apos;m Jonathan Le! I characterize myself as a lifelong learner
               <br></br>
               <br></br>
             </p>
