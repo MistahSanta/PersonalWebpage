@@ -35,7 +35,7 @@ export default function ProjectIcons(props: ProjectProps) {
 
           <a
             target="_blank"
-            rel="noreferrer-+"
+            rel="noreferrer"
             href={props.link}
             onMouseEnter={() => setIsShown(true)}
             onMouseLeave={() => setIsShown(false)}
