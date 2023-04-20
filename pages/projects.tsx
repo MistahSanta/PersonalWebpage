@@ -1,18 +1,43 @@
+import ProjectIcons from "@/components/ProjectIcons"
 
 export default function Projects()
 {
     return (
         <>
-        <div className="h-full w-full mellow-blue ">
+        <div className="h-fill w-full mellow-blue ">
         
         {/* Project Intro */}
         <h1 className=" font-sans font-bold text-white text-4xl text-center pt-6"> Projects</h1>
 
 
         {/*This part display the list of projects */}
-        <div className="flex-wrap flex flex-row h-full max-h-full mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl 2xl:max-w-4xl bg-red-600">
+        <div className=" h-full max-h-full w-fill mt-5 flex justify-center">
 
-            <section></section>
+            <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 py-6 px-2">
+                
+                    <ProjectIcons 
+                    background="/1.jpg" 
+                    desc="Text s;ldfjk;aslfjoawunasvdl aslkdfnasdl; fn;asjfs"
+                    title="My project :)"
+                    link="https://jonathanle.me"
+                    />
+               
+
+                <ProjectIcons 
+                background="/2.jpg" 
+                desc="Text s;ldfjk;aslfjoawunasvdl aslkdfnasdl; fn;asjfs"
+                title="My project :)"
+                link="https://jonathanle.me"
+                />
+               
+                <ProjectIcons 
+                background="/3.jpg"
+                desc="Text s;ldfjk;aslfjoawunasvdl aslkdfnasdl; fn;asjfs"
+                title="My project :)"
+                link="https://jonathanle.me"
+                />
+                
+            </section>
 
 
         </div>
