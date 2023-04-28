@@ -12,16 +12,16 @@ interface ProjectProps {
 }
 
 export default function ProjectIcons(props: ProjectProps) {
-  const [isShown, setIsShown] = useState(true);
+  const [isShown, setIsShown] = useState(false);
 
   return (
     <>
       <motion.div
-        initial={{ y: 300, opacity: 0 }}
+        initial={{ x: 100, opacity: 0 }}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         whileInView={{
-          y: 0,
+          x: 0,
           opacity: 1,
           transition: {
             type: spring,
@@ -30,7 +30,7 @@ export default function ProjectIcons(props: ProjectProps) {
           },
         }}
       >
-        <div className="relative w-[90vw] lg:w-[40vw] h-[50vh] sm:h-96 border-white border-4 rounded-lg shadow-lg shadow-blue-400 hover:shadow-none">
+        <div className="relative w-[90vw] lg:w-[40vw] h-[50vh] sm:h-96 border-white border-2 rounded-lg shadow-lg shadow-blue-400 hover:shadow-none">
           {/* background image */}
 
           <a
@@ -65,7 +65,7 @@ export default function ProjectIcons(props: ProjectProps) {
               )
             </div>
 
-            <div className="text-center relative h-full w-full z-0 text-white text-lg lg:text-4xl space-y-36 opacity-0 hover:opacity-100 flex flex-col overflow-visible Roboto font-semibold">
+            <div className="text-center relative h-full w-full z-0 text-white text-lg lg:text-4xl space-y-36 opacity-0 hover:opacity-100 flex flex-col overflow-visible Roboto">
               <div>{props.title}</div>
 
               <div className="">{props.desc}</div>

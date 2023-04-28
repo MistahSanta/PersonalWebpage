@@ -2,7 +2,9 @@ import Head from "next/head";
 import Hey from "./hey";
 import AboutMe from "./aboutme";
 import Projects from "./projects";
+import Contact from "./contact";
 
+// Purple blue gradient - button 
 export default function Home() {
   return (
     <>
@@ -13,6 +15,7 @@ export default function Home() {
       <Hey />
       <AboutMe />
       <Projects />
+      <Contact />
     </>
   );
 }
