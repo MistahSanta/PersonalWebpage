@@ -16,33 +16,22 @@ export default function Projects()
             <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 py-6 px-2">
                 
                 <ProjectIcons 
-                background="/1.jpg" 
-                desc="Text s;ldfjk;aslfjoawunasvdl aslkdfnasdl; fn;asjfs"
-                title="My project :)"
-                link="https://jonathanle.me"
+                background="/personalWebpage.png" 
+                desc="A website to showcase all my projects"
+                skills="Next.js, React.js, Tailwindcss"
+                title="My Personal Webpage"
+                link="https://github.com/MistahSanta/PersonalWebpage"
                 />
                
 
                 <ProjectIcons 
-                background="/2.jpg" 
-                desc="Text s;ldfjk;aslfjoawunasvdl aslkdfnasdl; fn;asjfs"
-                title="My project :)"
-                link="https://jonathanle.me"
+                background="/A&M.png" 
+                desc="A program that deploys a scalable solution to the CBRE challenge"
+                skills="Python with Flask, HTMl, CSS, JavaScript"
+                title="PlanniTech"
+                link="https://github.com/MistahSanta/TAMUHACK"
                 />
-               
-                <ProjectIcons 
-                background="/3.jpg"
-                desc="Text s;ldfjk;aslfjoawunasvdl aslkdfnasdl; fn;asjfs"
-                title="My project :)"
-                link="https://jonathanle.me"
-                />
-                
-                <ProjectIcons
-                 background="/4.jpg"
-                 desc="Text s;ldfjk;aslfjoawunasvdl aslkdfnasdl; fn;asjfs"
-                 title="My project :)"
-                 link="https://jonathanle.me"
-                 />
+            
             </section>
 
 

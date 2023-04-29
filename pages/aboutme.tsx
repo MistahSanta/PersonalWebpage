@@ -24,7 +24,7 @@ export default function AboutMe() {
 
         <div className="flex-wrap-reverse sm:flex-nowrap flex flex-row h-full max-h-full mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl 2xl:max-w-4xl">
           <section className="flex items-center md:max-w-lg lg:max-w-xl">
-            <div className="text-white grid item-center sm:text-sm md:text-base xl:text-xl 2xl:text-2xl font-mono relative openSans text-center sm:text-left">
+            <div className="text-white grid item-center sm:text-sm md:text-base xl:text-xl 2xl:text-2xl Open-Sans relative text-center sm:text-left">
                 <motion.div
                   initial={{x:-100, opacity: 0}}
                   whileInView={{x:0, opacity: 1}}

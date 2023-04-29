@@ -4,13 +4,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 /* Add the background as black spotlight for the name page */
 .radial-gradient {
     background-image: radial-gradient(#000, #242424)
 }
-.openSans{
-    font-family: 'Open Sans', sans-serif;
+.radial-Blue {
+    background-image: linear-gradient(to bottom, #00093b, #0d1d51, #1d3068, #2c4380, #3b5899, #395da7, #3761b5, #3466c3, #1e5ac8, #024ccb, #003dcd, #0929cc);}
+.Rubrik{
+    font-family: 'Rubik';
+
+}
+.OpenSans
+{
+    font-family: 'Open Sans';
+
 }
 .Roboto {
     font-family: 'Roboto', sans-serif;
@@ -20,3 +28,16 @@
     background-color: #00093B;
 }
 
+
+input::placeholder, textarea::placeholder {
+    color:white;
+    font-family: "Rubik";
+    overflow: hidden;
+    font-size: 1.4rem;
+}
+
+input, textarea {
+    background-color: transparent;
+    border: white solid 1px;
+    color:white;
+}

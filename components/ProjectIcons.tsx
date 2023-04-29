@@ -9,6 +9,7 @@ interface ProjectProps {
   desc: string;
   title: string;
   link: string;
+  skills: string;
 }
 
 export default function ProjectIcons(props: ProjectProps) {
@@ -30,7 +31,7 @@ export default function ProjectIcons(props: ProjectProps) {
           },
         }}
       >
-        <div className="relative w-[90vw] lg:w-[40vw] h-[50vh] sm:h-96 border-white border-2 rounded-lg shadow-lg shadow-blue-400 hover:shadow-none">
+        <div className="relative w-[90vw] lg:w-[40vw] h-[50vh] sm:h-96 border-white border-2 rounded-lg shadow-md shadow-blue-400 hover:shadow-none">
           {/* background image */}
 
           <a
@@ -65,10 +66,9 @@ export default function ProjectIcons(props: ProjectProps) {
               )
             </div>
 
-            <div className="text-center relative h-full w-full z-0 text-white text-lg lg:text-4xl space-y-36 opacity-0 hover:opacity-100 flex flex-col overflow-visible Roboto">
-              <div>{props.title}</div>
-
-              <div className="">{props.desc}</div>
+            <div className="text-center relative h-5/6 w-full z-0 text-white text-4xl opacity-0 hover:opacity-100 flex flex-col OpenSans">
+              <div>{props.title} <br></br><br></br> <span className="text-blue-500 font-bold">{props.skills}</span></div>
+              <div className="mt-auto">{props.desc}</div>
             </div>
           </a>
         </div>

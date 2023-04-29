@@ -1,36 +1,32 @@
-import Image from "next/image"
+import Image from "next/image";
+import {easeIn, easeOut, motion} from "framer-motion";
 
 export default function Contact() {
 
 
     return (
-        <div className="bg-red-600 h-full w-full grid grid-cols-2 gap gap-2 lg:gap-4">
-           
-           <div className="mx-auto">
-            <div className="relative w-96 h-96">
+        <div className="radial-Blue h-full w-full grid grid-cols-1 sm:grid-cols-2 gap-2 lg:gap-4 pt-10">
+           <motion.div 
+            animate={{ y: [0, -10, 0] }}
+            transition={{
+                repeat: Infinity,
+                duration:2,
+            }}
+           >
+           <div className="mx-auto flex items-center justify-center">
+            <div className="relative w-[90vw] h-[90vw] sm:w-[50vw] sm:h-[50vw]">
                 <Image 
-                src="/2.jpg"
+                src="/Software.svg"
                 alt="logo"
                 fill
                 />
             </div>
             </div>
-
+            </motion.div>
         <div className="">
-        <form className="bg-blue-600 w-full h-full grid grid-cols-2 gap-2 p-2">
-            <h1 className="text-center sm:text-4xl lg:text-6xl font-sans font-bold text-white col-span-2 ">Chat with me</h1>
-            <div className="col-span-2">
-                    <label htmlFor="formEmail"></label>
-                    <input 
-                        id="formEmail"
-                        type="email"
-                        name="email"
-                        autoComplete="email"
-                        placeholder="Email Address"
-                        className="w-full h-[5vh] border-r-4"
-                    />
-                </div>
-                <div className="">
+        <form className="w-full h-full grid grid-cols-2 gap-2 xl:gap-2 px-[3vw]">
+            <h1 className="sm:text-4xl lg:text-6xl text-white col-span-2 flex my-auto OpenSans font-bold">Get in Touch</h1>
+                <div>
                     <input 
                         id="formFirst"
                         type="fn"
@@ -38,7 +34,7 @@ export default function Contact() {
                         autoComplete="fn"
                         placeholder="First Name"
                         required
-                        className="w-full h-[5vh] border-r-2"
+                        className="w-full h-full rounded-2xl px-3"
                     />
                 </div>
                 <div>
@@ -48,15 +44,36 @@ export default function Contact() {
                         name="ln"
                         autoComplete="fn"
                         placeholder="Last Name"
-                        className="w-full h-[5vh] border-r-2"
+                        className="w-full h-full rounded-2xl px-3"
                     />
                 </div>
-
-                <div className="col-span-2">
-                    <textarea id="formMessage" className="w-full h-[20vh] border-r-2" name="message" placeholder="Your Message"></textarea>
+                <div>
+                <label htmlFor="formEmail"></label>
+                    <input 
+                        id="formEmail"
+                        type="email"
+                        name="email"
+                        autoComplete="email"
+                        placeholder="Email"
+                        className="w-full h-full rounded-2xl px-3"
+                    />
                 </div>
-                <div className='w-full col-span-2 overflow-hidde place-self-center'>
-                    <button type="submit" className='text-center w-full bg-white border-r-8 border-none border-collapse'>Submit</button>
+                <div>
+                <label htmlFor="formEmail"></label>
+                    <input 
+                        id="phoneNum"
+                        type="phone"
+                        name="phone"
+                        autoComplete="phone"
+                        placeholder="Phone No."
+                        className="w-full h-full rounded-2xl px-3"
+                    />
+                </div>
+                <div className="col-span-2 row-span-2">
+                    <textarea id="formMessage" className="w-full h-full rounded-2xl p-3" name="message" placeholder="Your Message"></textarea>
+                </div>
+                <div className='w-full col-span-2 text-center'>
+                    <button type="submit" className='text-center px-10 py-2 bg-white mt-4 mb-5 text-2xl OpenSans rounded-2xl'>Submit</button>
                 </div>
         </form>
         </div>

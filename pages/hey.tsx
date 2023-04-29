@@ -23,12 +23,12 @@ export default function Hey() {
             },
 
           }}>
-            <p className=" italic text-6xl sm:text-7xl text-blue-500 z-10 Roboto font-semibold">
+            <p className="relative italic text-6xl sm:text-7xl text-blue-500 z-10 Roboto font-semibold">
               Hey! I&apos;m {"\n"}
             </p>
           </motion.div>
           <motion.div initial={{x: -100, opacity: 0}} animate={{x:0, opacity: 1}} transition={{delay: 0.5}}>
-            <p className="z-10 font-bold text-7xl font-sans sm:text-9xl text-white text-center">
+            <p className="relative z-10 font-bold text-7xl font-sans sm:text-9xl text-white text-center">
               Jonathan Le
             </p>
           </motion.div>
