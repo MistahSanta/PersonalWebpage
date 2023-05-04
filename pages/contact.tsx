@@ -4,12 +4,12 @@ import {easeIn, easeOut, motion} from "framer-motion";
 
 export default function Contact() {
     // Handle the submit form 
-    const handleSubmit = async (event) =>
-    {
-        event.preventDefault(); // prevents the page from refreshing 
-        const data = new FormData(event.currentTarget);
-        console.log(data);
-    }
+    // const handleSubmit = async (event) =>
+    // {
+    //     event.preventDefault(); // prevents the page from refreshing 
+    //     const data = new FormData(event.currentTarget);
+    //     console.log(data);
+    // }
     return (
         <div className="radial-Blue h-full w-full grid grid-cols-1 sm:grid-cols-2 gap-2 lg:gap-4 pt-10">
            <motion.div 
