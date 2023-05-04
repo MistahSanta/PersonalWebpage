@@ -16,15 +16,15 @@ export default function AboutMe() {
           }}
           viewport={{ once: true }}
         >
-          <h1 className="text-center text-white text-4xl p-6 font-sans font-bold">
+          <h1 className="text-center text-white text-4xl p-6 font-sans font-bold Rubrik">
             About me
           </h1>
         </motion.div>
         {/* About me information starts here */}
 
-        <div className="flex-wrap-reverse sm:flex-nowrap flex flex-row h-full max-h-full mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl 2xl:max-w-4xl">
+        <div className="flex-wrap-reverse sm:flex-nowrap flex flex-row h-full max-h-full mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl 2xl:max-w-4xl justify-center">
           <section className="flex items-center md:max-w-lg lg:max-w-xl">
-            <div className="text-white grid item-center sm:text-sm md:text-base xl:text-xl 2xl:text-2xl Open-Sans relative text-center sm:text-left">
+            <div className="text-white grid item-center sm:text-sm md:text-base xl:text-xl 2xl:text-2xl Rubrik relative text-center sm:text-left">
                 <motion.div
                   initial={{x:-100, opacity: 0}}
                   whileInView={{x:0, opacity: 1}}

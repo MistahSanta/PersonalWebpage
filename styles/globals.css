@@ -5,24 +5,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 /* Add the background as black spotlight for the name page */
 .radial-gradient {
-    background-image: radial-gradient(#000, #242424)
+    background: radial-gradient(at bottom left, #000,#242424, transparent),
+                radial-gradient(at top,
+                #0922a0, black, transparent),
+                radial-gradient(at top right,
+                 blue, #242424, transparent),
+                radial-gradient(at bottom right,
+                 #00093B, blue, #00093B, transparent 50%) 
 }
 .radial-Blue {
-    background-image: linear-gradient(to bottom, #00093b, #0d1d51, #1d3068, #2c4380, #3b5899, #395da7, #3761b5, #3466c3, #1e5ac8, #024ccb, #003dcd, #0929cc);}
-.Rubrik{
-    font-family: 'Rubik';
-
+    background-image: linear-gradient(to bottom, #00093b, #0d1d51, #1d3068, #2c4380, #3b5899, #395da7, #3761b5, #3466c3, #1e5ac8, #024ccb, #003dcd, #0929cc);
 }
+
 .OpenSans
 {
-    font-family: 'Open Sans';
+    font-family: 'Dancing Script', 'Helvetica Neue', cursive;
+}
+.Kalam {
+    font-family: 'Kalam', cursive;
+}
+.Rubrik {
+    font-family: 'Rubik', sans-serif;
+}
 
-}
-.Roboto {
-    font-family: 'Roboto', sans-serif;
-}
 /* This is the background color for the about-me page */
 .mellow-blue {
     background-color: #00093B;
@@ -31,13 +40,13 @@
 
 input::placeholder, textarea::placeholder {
     color:white;
-    font-family: "Rubik";
+    font-family: 'Kalam', cursive;
     overflow: hidden;
-    font-size: 1.4rem;
 }
 
 input, textarea {
     background-color: transparent;
     border: white solid 1px;
     color:white;
+    font-family: 'Kalam', cursive;
 }

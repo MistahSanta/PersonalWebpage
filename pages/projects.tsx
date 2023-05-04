@@ -7,7 +7,7 @@ export default function Projects()
         <div className="h-fill w-full mellow-blue ">
         
         {/* Project Intro */}
-        <h1 className=" font-sans font-bold text-white text-4xl text-center pt-6"> Projects</h1>
+        <h1 className=" font-sans font-bold text-white text-4xl text-center pt-6 Rubrik"> Projects</h1>
 
 
         {/*This part display the list of projects */}

@@ -18,11 +18,10 @@ export default function ProjectIcons(props: ProjectProps) {
   return (
     <>
       <motion.div
-        initial={{ x: 100, opacity: 0 }}
+        initial={{ opacity: 0 }}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         whileInView={{
-          x: 0,
           opacity: 1,
           transition: {
             type: spring,
@@ -66,7 +65,7 @@ export default function ProjectIcons(props: ProjectProps) {
               )
             </div>
 
-            <div className="text-center relative h-5/6 w-full z-0 text-white text-4xl opacity-0 hover:opacity-100 flex flex-col OpenSans">
+            <div className="text-center relative h-5/6 w-full z-0 text-white text-3xl md:text-4xl opacity-0 hover:opacity-100 flex flex-col Kalam">
               <div>{props.title} <br></br><br></br> <span className="text-blue-500 font-bold">{props.skills}</span></div>
               <div className="mt-auto">{props.desc}</div>
             </div>

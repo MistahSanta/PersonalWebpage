@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@fireworks-js/react": "^2.10.2",
-    "@next/font": "^13.1.6",
+    "@next/font": "^13.3.4",
     "@types/node": "18.13.0",
     "eslint": "8.34.0",
     "eslint-config-next": "13.1.6",
