@@ -26,7 +26,7 @@ export default function AboutMe() {
           <section className="flex items-center md:max-w-lg lg:max-w-xl">
             <div className="text-white grid item-center sm:text-sm md:text-base xl:text-xl 2xl:text-2xl Rubrik relative text-center sm:text-left">
                 <motion.div
-                  initial={{x:"-50", opacity: 0}}
+                  initial={{x:"-20vw", opacity: 0}}
                   whileInView={{x:0, opacity: 1}}
                   transition={{
                     delay: 0.5,
@@ -42,7 +42,7 @@ export default function AboutMe() {
               </p>
               </motion.div>
               <motion.div
-                  initial={{x:"-50%", opacity: 0}}
+                  initial={{x:"-20vw", opacity: 0}}
                   whileInView={{x:0, opacity: 1}}
                   transition={{
                     delay: 1,
@@ -59,7 +59,7 @@ export default function AboutMe() {
               </p>
               </motion.div>
               <motion.div
-                  initial={{x:"-50%", opacity: 0}}
+                  initial={{x:"-20vw", opacity: 0}}
                   whileInView={{x:0, opacity: 1}}
                   transition={{
                     delay: 1.4,
@@ -78,8 +78,8 @@ export default function AboutMe() {
           {/*This is the picture of me */}
           {/* 1080 × 1616 */}
           <motion.div
-                  initial={{x:"50%", opacity: 0}}
-                  whileInView={{x:0, opacity: 1}}
+                  initial={{x:"20vw", opacity: 0, scale: "0.1%"}}
+                  whileInView={{x:0, opacity: 1, scale: "100%"}}
                   transition={{
                     delay: 0.6,
                     duration: 0.4
