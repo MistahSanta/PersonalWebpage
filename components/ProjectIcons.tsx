@@ -26,7 +26,7 @@ export default function ProjectIcons(props: ProjectProps) {
           transition: {
             type: spring,
             bounce: 0.1,
-            duration: 0.3,
+            duration: 1,
           },
         }}
       >

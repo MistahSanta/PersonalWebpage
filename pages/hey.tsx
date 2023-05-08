@@ -27,7 +27,7 @@ export default function Hey() {
               Hey! I&apos;m {"\n"}
             </p>
           </motion.div>
-          <motion.div initial={{x: -100, opacity: 0}} animate={{x:0, opacity: 1}} transition={{delay: 0.5}}>
+          <motion.div initial={{x: "-100%", opacity: 0}} animate={{x:0, opacity: 1}} transition={{delay: 0.7}}>
             <p className="relative z-10 font-bold text-7xl font-sans sm:text-9xl text-white text-center Rubrik">
               Jonathan Le
             </p>
@@ -37,7 +37,7 @@ export default function Hey() {
               position: "absolute",
               height: "90vh",
               width: "95%",
-              zIndex: 0
+              zIndex: -1
             }}
           />
 

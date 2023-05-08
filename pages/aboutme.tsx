@@ -1,6 +1,6 @@
 // This page will hold information about me
 import Image from "next/image";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function AboutMe() {
   var profilePic = "/2.jpg";
@@ -29,12 +29,12 @@ export default function AboutMe() {
                   initial={{x:-100, opacity: 0}}
                   whileInView={{x:0, opacity: 1}}
                   transition={{
-                    delay: 0.6,
+                    delay: 0.5,
                     duration: 0.4
                   }}
                   viewport={{once: true}}
                 >
-              <p>
+              <p className="pt-5 sm:pt-0">
                 Hi! I&apos;m Jonathan Le! I characterize myself as a lifelong
                 learner
                 <br></br>
@@ -42,7 +42,7 @@ export default function AboutMe() {
               </p>
               </motion.div>
               <motion.div
-                  initial={{x:-100, opacity: 0}}
+                  initial={{x:"-100%", opacity: 0}}
                   whileInView={{x:0, opacity: 1}}
                   transition={{
                     delay: 1,
