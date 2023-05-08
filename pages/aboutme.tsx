@@ -62,7 +62,7 @@ export default function AboutMe() {
                   initial={{x:"-20vw", opacity: 0}}
                   whileInView={{x:0, opacity: 1}}
                   transition={{
-                    delay: 1.4,
+                    delay: 1.3,
                     duration: 0.4
                   }}
                   viewport={{once: true}}
@@ -81,7 +81,7 @@ export default function AboutMe() {
                   initial={{x:"20vw", opacity: 0, scale: "0.1%"}}
                   whileInView={{x:0, opacity: 1, scale: "100%"}}
                   transition={{
-                    delay: 0.6,
+                    delay: 0.5,
                     duration: 0.4
                   }}
                   viewport={{once: true}}

@@ -37,6 +37,8 @@ export default function ProjectIcons(props: ProjectProps) {
             target="_blank"
             rel="noreferrer"
             href={props.link}
+            
+            
             onMouseEnter={() => setIsShown(true)}
             onMouseLeave={() => setIsShown(false)}
           >
@@ -46,7 +48,7 @@ export default function ProjectIcons(props: ProjectProps) {
                   src={props.background}
                   alt="background picture"
                   fill
-                  className="opacity-20"
+                  className="opacity-[5%]"
                   style={{
                     zIndex: 0,
                   }}
