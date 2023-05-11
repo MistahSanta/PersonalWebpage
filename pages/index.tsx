@@ -26,6 +26,7 @@ export default function Home() {
 /*
 Made good progression today. Next goal: 
 - Add a nav bar 
-- Use <img> instead of NextJs because of size formatting
-- Add personal project page 
+- Fix projectIcons bug on touch screen devices 
+- Add resumes, contact, etc
+- Fix submit button not working in production 
 */

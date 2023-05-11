@@ -50,13 +50,13 @@ export default function Contact() {
           </div>
         </div>
       </motion.div>
-      <div className="">
+      <div>
         <form 
         method="post"
         className="w-full h-full grid grid-cols-2 gap-2 xl:gap-2 px-[3vw] text-sm xl:text-2xl"
         onSubmit={handleSubmit}
         >
-          <h1 className="text-4xl lg:text-6xl text-white col-span-2 flex justify-center my-auto OpenSans font-bold">
+          <h1 className="text-4xl lg:text-6xl text-white col-span-2 flex justify-center my-auto Rubrik font-bold">
             Get in Touch
           </h1>
           <div>
