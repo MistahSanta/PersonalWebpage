@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { easeIn, easeOut, motion } from "framer-motion";
-import { json } from "stream/consumers";
+import { motion } from "framer-motion";
+
 
 export default function Contact() {
   // Handle the submit form
@@ -53,7 +53,7 @@ export default function Contact() {
       <div>
         <form 
         method="post"
-        className="w-full h-full grid grid-cols-2 gap-2 xl:gap-2 px-[3vw] text-sm xl:text-2xl"
+        className="w-full h-full grid grid-cols-2 gap-2 xl:gap-2 px-[10vw] sm:px-[3vw] text-sm xl:text-2xl "
         onSubmit={handleSubmit}
         >
           <h1 className="text-4xl lg:text-6xl text-white col-span-2 flex justify-center my-auto Rubrik font-bold">
@@ -66,7 +66,7 @@ export default function Contact() {
               name="fn"
               placeholder="First Name"
               required
-              className="w-full h-full rounded-2xl px-[2vw]"
+              className="w-full h-full rounded-2xl px-[2vw] py-[1vh]"
             />
           </div>
           <div>
@@ -76,7 +76,7 @@ export default function Contact() {
               name="ln"
               placeholder="Last Name"
               required
-              className="w-full h-full rounded-2xl px-[2vw]"
+              className="w-full h-full rounded-2xl px-[2vw] py-[1vh]"
             />
           </div>
           <div>
@@ -86,7 +86,7 @@ export default function Contact() {
               name="email"
               required
               placeholder="Email"
-              className="w-full h-full rounded-2xl px-[2vw]"
+              className="w-full h-full rounded-2xl px-[2vw] py-[1vh]"
             />
           </div>
           <div>
@@ -96,13 +96,13 @@ export default function Contact() {
               name="phone"
               autoComplete="Did not enter phone number"
               placeholder="Phone No."
-              className="w-full h-full rounded-2xl px-[2vw]"
+              className="w-full h-full rounded-2xl px-[2vw] py-[1vh]"
             />
           </div>
           <div className="col-span-2 row-span-2">
             <textarea
               id="formMessage"
-              className="w-full h-full rounded-2xl p-[2vw]"
+              className="w-full h-full rounded-2xl p-[2vw] py-[2vh]"
               name="message"
               placeholder="Your Message"
               required

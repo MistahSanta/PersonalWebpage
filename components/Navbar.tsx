@@ -1,8 +1,6 @@
 // This component will be respondable for navigating to different parts of the website
 import Link from "next/link";
 import { useState } from "react";
-import {FiMenu} from "react-icons/fi";
-import {FiX} from "react-icons/fi";
 
 /* use NextJs map function to map each link in an array     
     for simplier application
