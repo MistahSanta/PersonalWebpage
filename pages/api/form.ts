@@ -44,6 +44,8 @@ export default function form (req : any, res : any)
             console.log(err)
         else   
             console.log("email sent: " + info.body)
+            alert('Your message has been sent :)');
+
     })
     res.status(200);
 }

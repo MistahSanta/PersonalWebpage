@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { easeIn, easeOut, motion } from "framer-motion";
-import { json } from "stream/consumers";
+import { motion } from "framer-motion";
+import { Bounce, ToastContainer, toast } from "react-toastify"; // Notification
 
 export default function Contact() {
   // Handle the submit form
@@ -28,12 +28,11 @@ export default function Contact() {
     };
 
     const response = await fetch(destination, options);
-    const result = await response.json();
-    console.log(result);
-
+    
+    
   }
 
-
+  const notify = () => toast.success("Your form has been submitted :)");
 
   return (
     <div className="radial-Blue h-full w-full grid grid-cols-1 sm:grid-cols-2 gap-2 lg:gap-4 pt-10">
@@ -54,6 +53,7 @@ export default function Contact() {
         <form 
         method="post"
         className="w-full h-full grid grid-cols-2 gap-2 xl:gap-2 px-[3vw] text-sm xl:text-2xl"
+        id="contactForm"
         onSubmit={handleSubmit}
         >
           <h1 className="text-4xl lg:text-6xl text-white col-span-2 flex justify-center my-auto Rubrik font-bold">
@@ -112,12 +112,23 @@ export default function Contact() {
             <button
               type="submit"
               className="text-center px-10 py-2 bg-white mt-4 mb-5 text-2xl OpenSans rounded-2xl Kalam"
+              onClick={notify}
             >
               Submit
             </button>
+            <ToastContainer 
+            className="text-white Rubrik max-w-[30vw] max-h-[10vw]"
+            closeButton= {true}
+            transition={Bounce}
+            autoClose={3000}
+            closeOnClick= {true}
+            limit={1}
+            draggablePercent={40}
+           />
           </div>
         </form>
       </div>
+
     </div>
   );
 }
