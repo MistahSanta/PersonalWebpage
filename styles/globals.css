@@ -46,3 +46,9 @@ input, textarea {
     color:white;
     font-family: 'Kalam', cursive;
 }
+
+
+
+::-webkit-scrollbar {
+    display: none;
+} 
