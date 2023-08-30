@@ -1,42 +1,44 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
-<<<<<<< HEAD
-import { Bounce, ToastContainer, toast } from "react-toastify"; // Notification
-=======
 
->>>>>>> refs/remotes/origin/main
+import { Bounce, ToastContainer, toast } from "react-toastify"; // Notification
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
   // Handle the submit form
-  const handleSubmit = async (event : any) =>
-  {
+  const handleSubmit = async (event: any) => {
     event.preventDefault(); // prevents the page from refreshing
-    // Get data from the form 
+    // Get data from the form
     const data = {
-        first: event.target.fn.value,
-        last: event.target.ln.value,
-        email: event.target.email.value,
-        phone: event.target.phone.value,
-        message: event.target.formMessage.value
-    }
-    //Convert data into JSON string 
+      first: event.target.fn.value,
+      last: event.target.ln.value,
+      email: event.target.email.value,
+      phone: event.target.phone.value,
+      message: event.target.formMessage.value,
+    };
+    //Convert data into JSON string
     const JSONData = JSON.stringify(data);
-    const destination = "/api/form"; // Where the data will be sent - api 
+    const destination = "/api/form"; // Where the data will be sent - api
 
     const options = {
-        method: 'POST', 
-        headers: {
-            'Content-type': 'application/json',
-        },
-        body: JSONData,
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSONData,
     };
 
-    const response = await fetch(destination, options);
-    
-    
-  }
+    try {
+      const response = await fetch(destination, options);
+      toast.success("Your form has been submitted successfully :)");
+    } catch (error) {
+      console.log(error);
+      toast.error(
+        "There has been error in submitting your form. Please try again" 
+      );
+    }
+  };
 
-  const notify = () => toast.success("Your form has been submitted :)");
 
   return (
     <div className="radial-Blue h-full w-full grid grid-cols-1 sm:grid-cols-2 gap-2 lg:gap-4 pt-10">
@@ -47,22 +49,19 @@ export default function Contact() {
           duration: 2,
         }}
       >
-        <div className="mx-auto flex items-center justify-center">
-          <div className="relative w-[90vw] h-[90vw] sm:w-[50vw] sm:h-[50vw]">
+        <div className=" mx-auto flex items-center justify-center">
+          <div className="relative w-[70vw] h-[70vw] sm:w-[40vw] sm:h-[40vw]">
             <Image src="/Software.svg" alt="logo" fill />
           </div>
         </div>
       </motion.div>
-      <div>
-        <form 
-        method="post"
-<<<<<<< HEAD
-        className="w-full h-full grid grid-cols-2 gap-2 xl:gap-2 px-[3vw] text-sm xl:text-2xl"
-        id="contactForm"
-=======
-        className="w-full h-full grid grid-cols-2 gap-2 xl:gap-2 px-[10vw] sm:px-[3vw] text-sm xl:text-2xl "
->>>>>>> refs/remotes/origin/main
-        onSubmit={handleSubmit}
+
+      <div className="relative">
+        <form
+          method="post"
+          className="w-full h-full grid grid-cols-2 gap-2 xl:gap-2 px-[3vw] text-sm xl:text-2xl"
+          id="contactForm"
+          onSubmit={handleSubmit}
         >
           <h1 className="text-4xl lg:text-6xl text-white col-span-2 flex justify-center my-auto Rubrik font-bold">
             Get in Touch
@@ -116,27 +115,17 @@ export default function Contact() {
               required
             ></textarea>
           </div>
-          <div className="w-full col-span-2 text-center">
+          <div className="w-full col-span-2 text-center ">
             <button
               type="submit"
               className="text-center px-10 py-2 bg-white mt-4 mb-5 text-2xl OpenSans rounded-2xl Kalam"
-              onClick={notify}
+
             >
               Submit
             </button>
-            <ToastContainer 
-            className="text-white Rubrik max-w-[30vw] max-h-[10vw]"
-            closeButton= {true}
-            transition={Bounce}
-            autoClose={3000}
-            closeOnClick= {true}
-            limit={1}
-            draggablePercent={40}
-           />
           </div>
         </form>
       </div>
-
     </div>
   );
 }
