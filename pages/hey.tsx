@@ -36,7 +36,7 @@ export default function Hey() {
             transition={{ delay: 0.7 }}
           >
             <p className="relative font-bold text-7xl sm:text-9xl text-white text-center Rubrik">
-              Jonathan Le
+              Jonathan Le 
             </p>
           </motion.div>
         </div>
